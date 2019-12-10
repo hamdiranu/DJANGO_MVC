@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block Title %}MENTEE{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<div class="wrap-home--content">
+    <div class="container-fluid atas">
+        <div class="container">
+            <div class="row">
+                <div class="col-12"><p><br><br><br><br></p></div>
+                <div class="col-12">
+                    <div class="logo_ta">
+                        <img src="{% static 'img/title/alpha-logo.png'%}">
+                    </div>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <div class="home1">
+                        <h1>Alpha Tech Academy</h1>
+                        <p>Alpha Tech Academy is a tech talent incubator that gives everyone (even non IT background) a chance to be a professional Tech Talent within 3 month. Contact Person: Email:academy@alphatech.id Mobile phone:</p>
+                        <p>0877 9609 9530</p>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="our_mentee">
+        <h3>Our Mentee</h3>
+    </div>
+    <div class="container isi_mentee">
+        <div class="row">
+            <div class="col-4 steve">
+                <img src="{% static 'img/mentee/jobs.png'%}">
+            </div>
+            <div class="col-8 steve_word">
+                <h4>Steve Jobs</h4>
+                <p>"I learn so much from Alpha Tech."</p>
+            </div>
+        </div>
+    </div>
+    <div class="container page">
+        <div class="row">
+            <div class="col-4">
+                <img src="{% static 'img/mentee/page.png'%}">
+            </div>
+            <div class="col-8">
+                <h4>Larry Page</h4>
+                <p>"Great place to learn about programming."</p>
+            </div>
+        </div>
+    </div>
+    <div class="container mark">
+        <div class="row">
+            <div class="col-4">
+                <img src="{% static 'img/mentee/mark.png'%}">
+            </div>
+            <div class="col-8">
+                <h4>Mark Zuckenberg</h4>
+                <p>"The best place for who want to be a great IT talent"</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

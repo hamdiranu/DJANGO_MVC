@@ -1,0 +1,131 @@
+{% extends 'base.html' %}
+
+{% block Title %}HOME{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<div class="wrap-home--content">
+    <div class="container-fluid atas">
+        <div class="container">
+            <div class="row">
+                <div class="col-12"><p><br><br><br><br></p></div>
+                <div class="col-12">
+                    <div class="logo_ta">
+                        <img src="{% static 'img/title/alpha-logo.png'%}">
+                    </div>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <div class="home1">
+                        <h1>Alpha Tech Academy</h1>
+                        <p>Alpha Tech Academy is a tech talent incubator that gives everyone (even non IT background) a chance to be a professional Tech Talent within 3 month. Contact Person: Email:academy@alphatech.id Mobile phone:</p>
+                        <p>0877 9609 9530</p>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </div>
+    <!-- ==================================== 3 Gambar ============================================ -->
+    <div class="container con3">
+        <div class="row">
+            <div class="col-5 gambarhome3">
+                <div class='gambarhome3a'>
+                    <img src="{% static 'img/home/benefit.png'%}">
+                </div>
+                <div class='gambarhome3b'>
+                    <img src="{% static 'img/home/search-job.png'%}">
+                </div>
+                <div class='gambarhome3c'>
+                    <img src="{% static 'img/home/get-paid.png'%}">
+                </div>
+            </div>
+            <div class="col-7 bagian3">
+                <div class='tech'>
+                    <h2>Learn awesome tech</h2>
+                    <p>You will learn about programming language, such as Python and Javascript, build back-end apps using Flask framework woth microservice concept, built client-site apps using React Library, etc.</p>
+                </div>
+                <div class='job'>
+                    <h2>Land new job</h2>
+                    <p>If you can pass this awesome program, you will be part of our reliable tech team for especially Software Engineer and other tech position such as Quality Engineer, System Analyst, etc.</p>
+                </div>
+                <div class='paid'>
+                    <h2>Get paid to learn</h2>
+                    <p>Join for free and earn some money. Yes you read that right, no registration fee required to enter this program. To make things even better, you will receive pocket money just for participatin. Cool, right?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =================================== Who we are =============================================== -->
+    <div class="container who">
+        <div class="row">
+            <div class="col-5 gambarhome4">
+                <img src="{% static 'img/home/mission.png'%}">
+            </div>
+            <div class="col-7 bagian4">
+                <div class='who'>
+                    <h2>Who are we?</h2>
+                    <p>Alpha Tech Academy is a tech talent incubation that gives anyone any chance (not even an IT background) to learn within 3 month of being a professional Tech Talent. What is our mission? We want to improve capability Tech Talent in Indonesia</p>
+                    <br><br>
+                </div>
+                <div class='what'>
+                    <h2>What is our mission?</h2>
+                    <p>We want to improve capability Tech Talent in Indonesia</p>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <div class="will_you_learn"><h2> What will you learn? </h2></div>
+    <!-- ================================== list program ============================================= -->
+    <div class="container listprog1">
+        <div class="row">
+            <div class="col-3 learn1">
+                <div class="html">
+                    <img src="{% static 'img/home/learn-html.png'%}">
+                </div>
+            </div>
+            <div class="col-3 learn2">
+                <div class="python">
+                    <img src="{% static 'img/home/learn-programming.png'%}">
+                </div>
+            </div>
+            <div class="col-3 learn3">
+                <div class="git">
+                    <img src="{% static 'img/home/learn-git.png'%}">
+                </div>
+            </div>
+            <div class="col-3 learn4">
+                <div class="restapi">
+                    <img src="{% static 'img/home/learn-api.png'%}">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ================================= next baris ===================================== -->
+    <div class="container listprog1">
+        <div class="row">
+            <div class="col-3 learn1">
+                <div class="html">
+                    <img src="{% static 'img/home/learn-react.png'%}">
+                </div>
+            </div>
+            <div class="col-3 learn2">
+                <div class="python">
+                    <img src="{% static 'img/home/learn-tdd.png'%}">
+                </div>
+            </div>
+            <div class="col-3 learn3">
+                <div class="git">
+                    <img src="{% static 'img/home/learn-server.png'%}">
+                </div>
+            </div>
+            <div class="col-3 learn4">
+                <div class="scrum">
+                    <img src="{% static 'img/home/learn-scrum.png'%}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

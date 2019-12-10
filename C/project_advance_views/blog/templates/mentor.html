@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block Title %}MENTOR{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<div class="wrap-home--content">
+    <div class="container-fluid atas">
+        <div class="container">
+            <div class="row">
+                <div class="col-12"><p><br><br><br><br></p></div>
+                <div class="col-12">
+                    <div class="logo_ta">
+                        <img src="{% static 'img/title/alpha-logo.png'%}">
+                    </div>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <div class="home1">
+                        <h1>Alpha Tech Academy</h1>
+                        <p>Alpha Tech Academy is a tech talent incubator that gives everyone (even non IT background) a chance to be a professional Tech Talent within 3 month. Contact Person: Email:academy@alphatech.id Mobile phone:</p>
+                        <p>0877 9609 9530</p>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="our_mentee">
+        <h3>Our Mentor</h3>
+    </div>
+    <div class="container isi_mentee">
+        <div class="row">
+            <div class="col-4 andreas">
+                <img src="{% static 'img/mentor/andreas.png'%}">
+            </div>
+            <div class="col-8 andreas_word">
+                <h4>Andreas Nugroho</h4>
+                <h5>Software Ninja (5 years experience)</h5>
+                <h6>"Great place to learn about programing. Come join us!"</h6>
+            </div>
+        </div>
+    </div>
+    <div class="container page">
+        <div class="row">
+            <div class="col-4 ramdhan">
+                <img src="{% static 'img/mentor/ramdhan.png'%}">
+            </div>
+            <div class="col-8 ramdhan_word">
+                <h4>Ramdhan Hidayat</h4>
+                <h5>Master of Chaos (10 years experience)</h5>
+                <h6>"We make this program with passion, hard work and heart. Let's get rock with us!"</h6>
+            </div>
+        </div>
+    </div>
+    <div class="container mark">
+        <div class="row">
+            <div class="col-4 trimo">
+                <img src="{% static 'img/mentor/trimo.png'%}">
+            </div>
+            <div class="col-8 trimo_word">
+                <h4>Trimo Leksono</h4>
+                <h5>Magician (8 years experience)</h5>
+                <h6>"The best place for who want to be great IT talent."</h6>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

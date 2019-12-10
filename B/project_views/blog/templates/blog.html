@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block Title %}BLOG{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<div class="wrap-home--content">
+    <div class="container-fluid atas">
+        <div class="container">
+            <div class="row">
+                <div class="col-12"><p><br><br><br><br></p></div>
+                <div class="col-12">
+                    <div class="logo_ta">
+                        <img src="{% static 'img/title/alpha-logo.png'%}">
+                    </div>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <div class="home1">
+                        <h1>Alpha Tech Academy Blog</h1>
+                        <p>Alpha Tech Academy is a tech talent incubator that gives everyone (even non IT background) a chance to be a professional Tech Talent within 3 month. Contact Person: Email:academy@alphatech.id Mobile phone:</p>
+                        <p>0877 9609 9530</p>
+                    </div>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-6 isiblog">
+                <div class="fotokendala">
+                    <img src="{% static 'img/blog/kendala-sepulsa.jpg'%}">
+                </div>
+                <div class="container ketfoto">
+                    <div class="row">
+                        <div class="col-6 tanggal">
+                            <p>September 25, 2018</p>
+                        </div>
+                        <div class="col-6 comment">
+                            <p>0 Comment</p>
+                        </div>
+                    </div>
+                </div>
+                <h1>Punya kendala? Segera Hubungi Costumer Service Sepulsa!</h1>
+                <p>Bagi Sepulsa,kepuasan pelanggan adalah yang utama. Kami senantiasa mendengarkan keluhan maupun kendala yang kamu hadapi selama melakukan transaksi di Sepulsa. Umumnya pelanggan Sepulsa menghadapi kendala sebagai berikut: Status Order Pending Jika transaksi pembayaran sudah selesai, namun status order kamu masih pending dalam jangka waktu 15 menit, segera hubungi tim Customer Service dengan menyertakan email ...</p>
+                <div class="baca_selengkapnya">
+                    <a href="{% url 'blog:home' %}">Baca Selengkapnya</a>
+                </div>
+                <div class="fotofraud">
+                    <img src="{% static 'img/blog/sms.png'%}">
+                </div>
+                <div class="container ketfoto">
+                    <div class="row">
+                        <div class="col-6 tanggal">
+                            <p>August 14, 2018</p>
+                        </div>
+                        <div class="col-6 comment">
+                            <p>0 Comment</p>
+                        </div>
+                    </div>
+                </div>
+                <h1>OTP, Si Kode Rahasia nan Berbahaya</h1>
+                <p>Kemudahan dalam berbagai transaksi perbankan memang banyak memberikan keuntungan bagi nasabah. Bayangkan saja, aktifitas jual beli yang pada awalnya membutuhkan waktu dan tempat, kini bisa dilakukan tanpa perlu beranjak dari tempat duduk kamu dan pembayaran lunas dalam hitungan detik dengan transaksi online. Namun tanpa disadari, kemudahan tersebut bukan berarti tanpa celah. Sebelum kita membahas lebih ...</p>
+                <div class="baca_selengkapnya">
+                    <a href="{% url 'blog:home' %}">Baca Selengkapnya</a>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+</div>
+{% endblock %}
