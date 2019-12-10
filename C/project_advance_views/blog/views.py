@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .models import Blog, Mentor, Mentee
 
 # Create your views here.
 
@@ -6,13 +7,29 @@ def home(request):
     return render(request, 'home.html',{})
 
 def blog(request):
-    return render(request, 'blog.html',{})
+    blogs = Blog.objects.all()
+    return render(request, 'blog.html',{'blogs':blogs})
 
 def mentee(request):
-    return render(request, 'mentee.html',{})
+    mentees = Mentee.objects.all()
+    return render(request, 'mentee.html',{'mentees':mentees})
 
 def mentor(request):
-    return render(request, 'mentor.html',{})
+    mentors = Mentor.objects.all()
+    return render(request, 'mentor.html',{'mentors':mentors})
 
 def author(request):
     return render(request, 'author.html',{})
+
+def form(request):
+    return render(request, 'form.html',{})
+
+def formupdate(request):
+    judul   = request.POST['judul_post']
+    konten  = request.POST['content_post']
+    link    = request.POST['link_gambar']
+    new = Blog(Title = judul, Content = konten, Gambar = link)
+    new.save()
+    # blogs = Blog.objects.all()
+    return redirect('/blog')
+    

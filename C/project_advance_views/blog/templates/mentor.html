@@ -30,41 +30,19 @@
     <div class="our_mentee">
         <h3>Our Mentor</h3>
     </div>
+    {% for mentor in mentors%}
     <div class="container isi_mentee">
         <div class="row">
             <div class="col-4 andreas">
-                <img src="{% static 'img/mentor/andreas.png'%}">
+                <img src="{% static ''%}{{mentor.Gambar}}">
             </div>
             <div class="col-8 andreas_word">
-                <h4>Andreas Nugroho</h4>
-                <h5>Software Ninja (5 years experience)</h5>
-                <h6>"Great place to learn about programing. Come join us!"</h6>
+                <h4>{{mentor.Nama}}</h4>
+                <h5>{{mentor.Experience}}</h5>
+                <h6>{{mentor.Quote}}</h6>
             </div>
         </div>
     </div>
-    <div class="container page">
-        <div class="row">
-            <div class="col-4 ramdhan">
-                <img src="{% static 'img/mentor/ramdhan.png'%}">
-            </div>
-            <div class="col-8 ramdhan_word">
-                <h4>Ramdhan Hidayat</h4>
-                <h5>Master of Chaos (10 years experience)</h5>
-                <h6>"We make this program with passion, hard work and heart. Let's get rock with us!"</h6>
-            </div>
-        </div>
-    </div>
-    <div class="container mark">
-        <div class="row">
-            <div class="col-4 trimo">
-                <img src="{% static 'img/mentor/trimo.png'%}">
-            </div>
-            <div class="col-8 trimo_word">
-                <h4>Trimo Leksono</h4>
-                <h5>Magician (8 years experience)</h5>
-                <h6>"The best place for who want to be great IT talent."</h6>
-            </div>
-        </div>
-    </div>
+    {% endfor %}
 </div>
 {% endblock %}

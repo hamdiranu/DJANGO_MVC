@@ -272,6 +272,13 @@ header {
 
 /* =========================================== BLOG ======================================== */
 
+.link_form p{
+    color: #19345E;
+    padding-top: 30px;
+    padding-left: 0px;
+}
+
+
 .ketfoto p{
     color: black;
     font-size: 12px;
@@ -321,7 +328,7 @@ header {
 }
 
 .isiblog {
-    margin-left: 120px;
+    margin-left: 310px;
 }
 
 /* ====================================== Our Mentee ==================================================== */
@@ -464,6 +471,13 @@ header {
 }
 
 /* ============================================================================================ */
+
+.form_body {
+    padding-top: 100px;
+    text-align: center;
+}
+
+
 @media(max-width:991px) {
 
     .option1 {

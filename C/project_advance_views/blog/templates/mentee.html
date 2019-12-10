@@ -30,38 +30,19 @@
     <div class="our_mentee">
         <h3>Our Mentee</h3>
     </div>
+    {% for mentee in mentees%}
     <div class="container isi_mentee">
         <div class="row">
             <div class="col-4 steve">
-                <img src="{% static 'img/mentee/jobs.png'%}">
+                <img src="{% static ''%}{{mentee.Gambar}}">
             </div>
             <div class="col-8 steve_word">
-                <h4>Steve Jobs</h4>
-                <p>"I learn so much from Alpha Tech."</p>
+                <h4>{{mentee.Name}}</h4>
+                <p>{{mentee.Quote}}</p>
             </div>
         </div>
     </div>
-    <div class="container page">
-        <div class="row">
-            <div class="col-4">
-                <img src="{% static 'img/mentee/page.png'%}">
-            </div>
-            <div class="col-8">
-                <h4>Larry Page</h4>
-                <p>"Great place to learn about programming."</p>
-            </div>
-        </div>
-    </div>
-    <div class="container mark">
-        <div class="row">
-            <div class="col-4">
-                <img src="{% static 'img/mentee/mark.png'%}">
-            </div>
-            <div class="col-8">
-                <h4>Mark Zuckenberg</h4>
-                <p>"The best place for who want to be a great IT talent"</p>
-            </div>
-        </div>
-    </div>
+    {% endfor %}
+    
 </div>
 {% endblock %}

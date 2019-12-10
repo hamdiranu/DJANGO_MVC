@@ -24,4 +24,6 @@ urlpatterns = [
     path('author/', views.author, name = 'author'),
     path('mentor/', views.mentor, name = 'mentor'),
     path('mentee/', views.mentee, name = 'mentee'),
+    path('form/', views.form, name = 'form'),
+    path('form/update', views.formupdate, name = 'formupdate'),
 ]
