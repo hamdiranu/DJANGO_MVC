@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block Title %}DETAILS{% endblock %}
+{% block tambahan %}Blog{% endblock %}
+
+{% block content %}
+{% load static %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="isiblog">
+            <div class="col-8">
+                <div class="fotokendala">
+                    <img src="{% static ''%}{{blogs.Gambar}}">
+                </div>
+                <div class="container ketfoto">
+                    <div class="row">
+                        <div class="col-6 tanggal">
+                            <p>{{blogs.Tanggal}}</p>
+                        </div>
+                        <div class="col-6 comment">
+                            <p>{{blogs.Comment}}</p>
+                        </div>
+                    </div>
+                </div>
+                <h1>{{blogs.Title}}</h1>
+                <p>{{blogs.Content}}</p>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
+{% endblock %}

@@ -26,4 +26,5 @@ urlpatterns = [
     path('mentee/', views.mentee, name = 'mentee'),
     path('form/', views.form, name = 'form'),
     path('form/update', views.formupdate, name = 'formupdate'),
+    path('blog/<int:blog_id>', views.detail, name='baca_selengkapnya'),
 ]

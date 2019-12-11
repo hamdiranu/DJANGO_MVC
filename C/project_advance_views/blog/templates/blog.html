@@ -27,9 +27,9 @@
                         </div>
                     </div>
                     <h1>{{blog.Title}}</h1>
-                    <p>{{blog.Content}}</p>
+                    <p>{{blog.Content|safe|truncatewords:"20"|linebreaks}}</p>
                     <div class="baca_selengkapnya">
-                        <a href="{% url 'blog:home' %}">Baca Selengkapnya</a>
+                        <a href="{% url 'blog:baca_selengkapnya' blog.id %}">Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
