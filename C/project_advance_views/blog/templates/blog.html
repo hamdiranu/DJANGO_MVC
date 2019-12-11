@@ -1,32 +1,12 @@
 {% extends 'base.html' %}
 
 {% block Title %}BLOG{% endblock %}
+{% block tambahan %}Blog{% endblock %}
 
 {% block content %}
 {% load static %}
 
 <div class="wrap-home--content">
-    <div class="container-fluid atas">
-        <div class="container">
-            <div class="row">
-                <div class="col-12"><p><br><br><br><br></p></div>
-                <div class="col-12">
-                    <div class="logo_ta">
-                        <img src="{% static 'img/title/alpha-logo.png'%}">
-                    </div>
-                </div>
-                <div class="col-3"></div>
-                <div class="col-6">
-                    <div class="home1">
-                        <h1>Alpha Tech Academy Blog</h1>
-                        <p>Alpha Tech Academy is a tech talent incubator that gives everyone (even non IT background) a chance to be a professional Tech Talent within 3 month. Contact Person: Email:academy@alphatech.id Mobile phone:</p>
-                        <p>0877 9609 9530</p>
-                    </div>
-                </div>
-                <div class="col-3"></div>
-            </div>
-        </div>
-    </div>
     <div class="container">
         <div class="row">
             <div class="col-2"></div>
@@ -56,8 +36,8 @@
             {% endfor %}
             <div class="col-3"></div>
             <div class='link_form'>
-                <p>Apakah anda ingin menginput data baru?</p>
-                <a href="{% url 'blog:form' %}">click here</a>
+                <p>Apakah anda ingin menginput Artikel baru?</p>
+                <a href="{% url 'blog:form' %}">Submit here</a>
             </div>
         </div>
     </div>
